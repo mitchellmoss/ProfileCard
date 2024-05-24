@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Profile Card</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <style>
+    .apple-card {
+      background: #f5f5f7;
+      border-radius: 20px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+      transition: all 0.3s ease;
+    }
+    .apple-card:hover {
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+    }
+    .apple-button {
+      background: linear-gradient(135deg, #0071e3 0%, #007aff 100%);
+      border-radius: 8px;
+      transition: all 0.3s ease;
+    }
+    .apple-button:hover {
+      background: linear-gradient(135deg, #005bb5 0%, #0066cc 100%);
+    }
+  </style>
+</head>
+<body class="bg-gradient-to-r from-green-400 via-blue-500 to-purple-600 flex items-center justify-center min-h-screen">
+
+  <div class="apple-card max-w-sm w-full text-center">
+    <div class="w-32 h-32 mx-auto rounded-full shadow-lg overflow-hidden mb-4">
+      <img src="photo.jpeg" alt="Profile Picture" class="w-full h-full object-cover">
+    </div>
+    <h2 class="text-2xl font-semibold text-gray-800">Mitchell Moss</h2>
+    <p class="text-gray-600 mb-2">Full Stack Developer & Designer</p>
+    <p class="text-gray-700 mb-6">Passionate about creating modern and user-friendly web applications with a focus on clean design and efficient code.</p>
+    
+    <div class="mb-6">
+      <p class="text-gray-500"><strong>Email:</strong> mitchell@example.com</p>
+      <p class="text-gray-500"><strong>Phone:</strong> (123) 456-7890</p>
+      <p class="text-gray-500"><strong>Location:</strong> San Francisco, CA</p>
+    </div>
+    
+    <div class="flex justify-center space-x-4 mb-6">
+      <a href="https://www.linkedin.com/in/mitchellmoss" class="apple-button text-white py-2 px-4">LinkedIn</a>
+      <a href="https://github.com/mitchellmoss" class="apple-button text-white py-2 px-4">GitHub</a>
+    </div>
+    
+    <div class="flex justify-center space-x-4">
+      <a href="https://twitter.com/mitchellmoss" class="text-gray-500 hover:text-gray-700 transition"><svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M23.953 4.569a10 10 0 01-2.825.775 4.948 4.948 0 002.163-2.723 9.994 9.994 0 01-3.149 1.195 4.924 4.924 0 00-8.384 4.482A13.978 13.978 0 011.671 3.149 4.924 4.924 0 003.149 9.87a4.903 4.903 0 01-2.231-.616v.061a4.926 4.926 0 003.946 4.827 4.903 4.903 0 01-2.224.085 4.924 4.924 0 004.604 3.417 9.867 9.867 0 01-6.102 2.1c-.398 0-.79-.023-1.175-.069a13.95 13.95 0 007.548 2.212c9.055 0 14.001-7.496 14.001-13.986 0-.21-.004-.42-.013-.63a10.025 10.025 0 002.462-2.548l-.047-.02z"></path></svg></a>
+      <a href="https://facebook.com/mitchellmoss" class="text-gray-500 hover:text-gray-700 transition"><svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M22.676 0H1.324C.593 0 0 .593 0 1.324v21.352C0 23.407.593 24 1.324 24h11.483v-9.294H9.846v-3.622h2.961V8.408c0-2.934 1.793-4.533 4.412-4.533 1.254 0 2.335.093 2.649.135v3.07H17.1c-1.618 0-1.932.77-1.932 1.898v2.49h3.872l-.506 3.622h-3.366V24h6.6c.73 0 1.324-.593 1.324-1.324V1.324C24 .593 23.407 0 22.676 0z"></path></svg></a>
+    </div>
+  </div>
+
+</body>
+</html>
